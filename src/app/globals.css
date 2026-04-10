@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 18% 4%;
+    --foreground: 42 45% 92%;
+    --card: 32 20% 8%;
+    --card-foreground: 42 45% 92%;
+    --popover: 32 20% 8%;
+    --popover-foreground: 42 45% 92%;
+    --primary: 43 74% 60%;
+    --primary-foreground: 30 18% 8%;
+    --secondary: 30 16% 7%;
+    --secondary-foreground: 42 45% 92%;
+    --muted: 32 14% 14%;
+    --muted-foreground: 40 18% 68%;
+    --accent: 38 24% 16%;
+    --accent-foreground: 42 45% 92%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 38 25% 22%;
+    --input: 38 25% 22%;
+    --ring: 43 74% 60%;
+    --radius: 0.5rem;
+    --sidebar-background: 30 16% 7%;
+    --sidebar-foreground: 42 45% 92%;
+    --sidebar-primary: 43 74% 60%;
+    --sidebar-primary-foreground: 30 18% 8%;
+    --sidebar-accent: 38 24% 16%;
+    --sidebar-accent-foreground: 42 45% 92%;
+    --sidebar-border: 38 25% 22%;
+    --sidebar-ring: 43 74% 60%;
+  }
+
+  .dark {
+    --background: 30 18% 4%;
+    --foreground: 42 45% 92%;
+    --card: 32 20% 8%;
+    --card-foreground: 42 45% 92%;
+    --popover: 32 20% 8%;
+    --popover-foreground: 42 45% 92%;
+    --primary: 43 74% 60%;
+    --primary-foreground: 30 18% 8%;
+    --secondary: 30 16% 7%;
+    --secondary-foreground: 42 45% 92%;
+    --muted: 32 14% 14%;
+    --muted-foreground: 40 18% 68%;
+    --accent: 38 24% 16%;
+    --accent-foreground: 42 45% 92%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 38 25% 22%;
+    --input: 38 25% 22%;
+    --ring: 43 74% 60%;
+    --sidebar-background: 30 16% 7%;
+    --sidebar-foreground: 42 45% 92%;
+    --sidebar-primary: 43 74% 60%;
+    --sidebar-primary-foreground: 30 18% 8%;
+    --sidebar-accent: 38 24% 16%;
+    --sidebar-accent-foreground: 42 45% 92%;
+    --sidebar-border: 38 25% 22%;
+    --sidebar-ring: 43 74% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at top, rgba(212, 175, 55, 0.2), transparent 32%),
+      linear-gradient(180deg, #050403 0%, #0b0906 45%, #050403 100%);
+    min-height: 100vh;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
